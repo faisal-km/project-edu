@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Program | Imtiyaz Center",
+  description:
+    "Daftar program Imtiyaz Center untuk kuliah di luar negeri: Mesir, Turki, dan bimbingan bahasa Arab.",
+};
+
 export default function Program() {
   return (
     <section className="space-y-12">

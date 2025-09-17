@@ -1,62 +1,27 @@
+import "./globals.css";
+import Navbar from "@/components/Navbar";
+
 export const metadata = {
   title: "Imtiyaz Center",
-  description: "Imtiyaz Overseas Educational Consultant (IOEC)",
+  description:
+    "Konsultan pendidikan luar negeri terpercaya untuk kuliah di Mesir & Turki",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="id">
-      <body>
-        {/* Header */}
-        <header className="bg-white shadow-md">
-          <div className="container flex justify-between items-center py-4">
-            <div className="flex items-center gap-3">
-              <img
-                src="/logo.png"
-                alt="Logo Imtiyaz Center"
-                className="h-12 w-auto"
-              />
-              <span className="text-xl font-bold text-gray-800">
-                Imtiyaz Center
-              </span>
-            </div>
-            <nav className="space-x-6">
-              <a
-                href="/"
-                className="text-gray-700 hover:text-[var(--color-primary)]"
-              >
-                Home
-              </a>
-              <a
-                href="/tentang"
-                className="text-gray-700 hover:text-[var(--color-primary)]"
-              >
-                Tentang Kami
-              </a>
-              <a
-                href="/program"
-                className="text-gray-700 hover:text-[var(--color-primary)]"
-              >
-                Program
-              </a>
-              <a
-                href="/kontak"
-                className="text-gray-700 hover:text-[var(--color-primary)]"
-              >
-                Kontak
-              </a>
-            </nav>
-          </div>
-        </header>
+      <body className="bg-[var(--color-bg)] text-[var(--color-text)] flex flex-col min-h-screen">
+        {/* Navbar */}
+        <Navbar />
 
         {/* Main Content */}
-        <main className="container py-10">{children}</main>
+        <main className="flex-grow">{children}</main>
 
         {/* Footer */}
-        <footer className="bg-white border-t mt-10">
-          <div className="container text-center py-6 text-sm text-gray-600">
-            © 2025 Imtiyaz Center. All rights reserved.
-          </div>
+        <footer className="bg-gray-100 text-center py-6 border-t">
+          <p className="text-sm text-gray-600">
+            © {new Date().getFullYear()} Imtiyaz Center. All rights reserved.
+          </p>
         </footer>
       </body>
     </html>

@@ -1,3 +1,6 @@
+/* Import Google Fonts (wajib di paling atas) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
 /* Import Tailwind v4 */
 @import "tailwindcss/preflight";
 @import "tailwindcss/utilities";
@@ -8,10 +11,11 @@
   --color-text: #1a1a1a; /* teks utama */
   --color-primary: #166534; /* hijau tua */
   --color-secondary: #2563eb; /* biru */
+  --color-accent: #f59e0b; /* oranye aksen */
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;

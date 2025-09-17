@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "Kontak | Imtiyaz Center",
+  description: "Hubungi Imtiyaz Center untuk informasi lebih lanjut.",
+};
+
 export default function Contact() {
   return (
     <section className="space-y-12">
@@ -11,14 +16,14 @@ export default function Contact() {
       </div>
 
       {/* Kontak Info */}
-      <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
         {/* Info */}
-        <div className="space-y-6">
-          <h2 className="text-2xl font-bold">Informasi Kontak</h2>
+        <div className="space-y-6 bg-white p-6 rounded-lg shadow-md">
+          <h2 className="text-2xl font-bold text-gray-800">Informasi Kontak</h2>
           <p className="text-gray-700">
             Silakan hubungi kami melalui nomor atau email berikut:
           </p>
-          <ul className="space-y-3">
+          <ul className="space-y-3 text-gray-700">
             <li>
               📍 <span className="font-semibold">Alamat:</span> Cilegon, Banten,
               Indonesia
@@ -39,11 +44,13 @@ export default function Contact() {
         </div>
 
         {/* Form Kontak */}
-        <div>
-          <h2 className="text-2xl font-bold mb-4">Kirim Pesan</h2>
+        <div className="bg-white p-6 rounded-lg shadow-md">
+          <h2 className="text-2xl font-bold mb-4 text-gray-800">Kirim Pesan</h2>
           <form className="space-y-4">
             <div>
-              <label className="block text-sm font-medium">Nama</label>
+              <label className="block text-sm font-medium text-gray-700">
+                Nama
+              </label>
               <input
                 type="text"
                 className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
@@ -51,7 +58,9 @@ export default function Contact() {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium">Email</label>
+              <label className="block text-sm font-medium text-gray-700">
+                Email
+              </label>
               <input
                 type="email"
                 className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
@@ -59,7 +68,9 @@ export default function Contact() {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium">Pesan</label>
+              <label className="block text-sm font-medium text-gray-700">
+                Pesan
+              </label>
               <textarea
                 rows="4"
                 className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
